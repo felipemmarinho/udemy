@@ -1,0 +1,247 @@
+*************************************************************
+comentários de linha
+
+	# comentário aqui
+
+comentário de bloco """comentário aqui """ (são três aspas simples ou dupla para abrir e três aspas simples ou duplas para fechar
+
+
+***************************************************************
+operadores aritméticos
+
+Adição 10 + 10
+
+subtração 15 -5
+
+multiplicação 9 * 8
+
+Divisão com float  / sempre retornará ponto flutuante
+divisão com inteiro // sempre retornara inteiro
+	
+exponenciação ** 
+
+módulo % - retorna o resto da divisão
+
+precedência de operadores
+
+1º ()
+2º **
+3º * / // %
+4º + -
+
+**********************************************************
+
+concatenação 
+
+A + B + C retorna ABC
+
+' FELIPE ' + ' '+' MELLO ' + ' MARINHO ' RETORNA FELIPE DE MELLO MARINHO
+repetição 
+
+a * 10 retorna aaaaaaaaa(a 10 vezes)
+
+****************************
+
+formatação de string
+
+Formatação básica de strings
+s - string
+d - int
+f - float
+.<número de dígitos>f
+x ou X - Hexadecimal
+(Caractere)(><^)(quantidade)
+> - Esquerda
+< - Direita
+^ - Centro
+= - Força o número a aparecer antes dos zeros
+Sinal - + ou -
+Ex.: 0>-100,.1f
+Conversion flags - !r !s !a 
+"""
+variavel = 'ABC'
+print(f'{variavel}')  - aparecerá "ABC"
+print(f'{variavel: >10}')- Aparecerá "XXXXXXXABC" o X representa espaço em branco
+print(f'{variavel: <10}.') - Aparecerá 'ABCXXXXXXX" o X representa espaço em branco
+print(f'{variavel: ^10}.') - Aparecerá 'XXXABCXXXX" o X representa espaço em branco
+print(f'{variavel: $^10}.') - Aparecerá '$$$ABC$$$$" o $ representa o caracter solicitado.
+
+print(f'{1000.4873648123746:0=+10,.1f}') Aparecerá +0001,000.5 - 
+print(f'O hexadecimal de 1500 é {1500:08X}')aparecerá 000005DC
+print(f'{variavel!r}')
+
+############################################
+Fatiamento de strings
+ 012345678
+ Olá mundo
+-987654321
+Fatiamento [i:f:p] [::] O"i" início o "f" fime o "p" passo
+Obs.: a função len retorna a qtd 
+de caracteres da str
+"""
+variavel = 'Olá mundo'
+ print(variável[4:])irá aparecer 'mundo'
+ print(variavel[4:8])irá aparecer 'mund' o índice começa do 0 
+ print(variavel[0:5])irá aparecer 'Olá m' o índice começa do 0
+ print(variavel[:5])irá aparecer 'Olá m' o índice começa do 0
+ print(variavel[-8:-2])irá aparecer 'lá m' o índice começa do 0
+ print(variavel[0:9:2])irá aparecer 'Oámno' ele irá pegar os caracteres do índice 0 ao 9 pulando de 2 em dois índice 1[O] índice 3[á] ...
+ print(variavel[::-1])irá aparecer 'odnum àlO' ele irá inverter a string
+ print(variavel[-1:-10:-1])irá aparecer 'odnum àlO' ele irá inverter a string
+
+exercício
+Exercício
+Peça ao usuário para digitar seu nome
+Peça ao usuário para digitar sua idade
+Se nome e idade forem digitados:
+    Exiba:
+        Seu nome é {nome}
+        Seu nome invertido é {nome invertido}
+        Seu nome contém (ou não) espaços
+        Seu nome tem {n} letras
+        A primeira letra do seu nome é {letra}
+        A última letra do seu nome é {letra}
+Se nada for digitado em nome ou idade: 
+    exiba "Desculpe, você deixou campos vazios."
+
+resolução
+
+nome = input('Digite o seu nome : ')
+
+idade_digitada = int(input('digite a sua idade :'))
+
+if(nome == '') or (idade_digitada == ''):
+    print('Desculpa você deixou campos vaxios')
+else:
+    idade = int(idade_digitada)
+
+    print(f'Seu nome é : {nome}')
+    print(f'Seu nome invertido é {nome[::-1]}')
+    print(f"{'seu nome contém espaço' if ' ' in nome else 'seu nome não contém espaço'}")
+    print(f'Seu nome tem {len(nome)} letras')
+    print(f'A primeira letra do seu nome é : {nome[0]}')
+    print(f'A última letra do seu nome é {nome[-1]}')
+
+resultado :
+Digite o seu nome : Felipe de Mello Marinho
+digite a sua idade :58
+Seu nome é : Felipe de Mello Marinho
+Seu nome invertido é ohniram ollem ed epilef
+seu nome contém espaço
+Seu nome tem 23 letras
+A primeira letra do seu nome é : F
+A última letra do seu nome é o
+
+
+
+print(variavel[::-1])
+############################################
+formatação com format
+ 
+a = 'AAAAA'
+b = 'BBBBBB'
+c = 1.1
+string = 'A ={} B = {} C={:.2f}' * o pimeiro colchete corresponde a primeira variável a, o segundo a segunda b e assim por diante
+formato = string.format(a, b, c) 
+print(formato)
+
+para não seguir a ordem é só enumerar os colchetes
+
+a = 'AAAAA'
+b = 'BBBBBB'
+c = 1.1
+string = 'B = {1} C={2:.2f} A ={0} A ={0}' * o pimeiro colchete corresponde a primeira variável a, o segundo a segunda b e assim por diante
+formato = string.format(a, b, c) 
+print(formato)
+
+
+##########################################################
+formatação com interpolação de string 
+
+Interpolação básica de strings
+s - string
+d e i - int
+f - float
+x e X - Hexadecimal (ABCDEF0123456789) * o x minúscula irá gerar um hexadecimal minúsculo e um X maiúsculo irá gerar um hexadecimal maiúsculo
+"""
+nome = 'Luiz'
+preco = 1000.95897643
+variavel = '%s, o preço é R$%.2f' % (nome, preco)
+print(variavel) * sairá "Luiz o preço é R$1000.95"
+print('O hexadecimal de %d é %08X' % (1500, 1500))
+retornará "O hexadecimal de 1500 É : 000005DC
+
+sempre no final da string colocar % -  "% (nome, preco)"
+
+
+#################################
+
+
+
+operadores de comparação
+
+"""
+Operadores de comparação (relacionais)
+OP      Significado         Exemplo (True)
+>       maior               2 > 1
+>=      maior ou igual      2 >= 2
+<       menor               1 < 2
+<=      menor ou igual      2 <= 2
+==      igual               'a' == 'a'
+!=      diferente           'a' != 'b'
+maior = 2 > 1
+maior_ou_igual = 2 >= 2
+menor = 1 < 2
+menor_ou_igual = 2 <= 2
+igual = 'a' == 'a'
+diferente = 'a' != 'b'
+
+##############################################
+Introdução ao try/except
+try -> tentar executar o código
+except -> ocorreu algum erro ao tentar executar
+"""
+numero_str = input(
+    'Vou dobrar o número que vc digitar: '
+)
+
+try:
+    numero_float = float(numero_str)
+    print('FLOAT:', numero_float)
+    print(f'O dobro de {numero_str} é {numero_float * 2:.2f}')
+except:
+    print('Isso não é um número')
+
+# if numero_str.isdigit():
+#     numero_float = float(numero_str)
+#     print(f'O dobro de {numero_str} é {numero_float * 2:.2f}')
+# else:
+#     print('Isso não é um número')
+
+######################################################
+"""
+CONSTANTE = "Variáveis" que não vão mudar
+Muitas condições no mesmo if (ruim)
+    <- Contagem de complexidade (ruim)
+"""
+velocidade = 61  # velocidade atual do carro
+local_carro = 100  # local em que o carro está na estrada
+
+RADAR_1 = 60  # velocidade máxima do radar 1
+LOCAL_1 = 100  # local onde o radar 1 está
+RADAR_RANGE = 1  # A distância onde o radar pega
+
+vel_carro_pass_radar_1 = velocidade > RADAR_1
+carro_passou_radar_1 = local_carro >= (LOCAL_1 - RADAR_RANGE) and \
+    local_carro <= (LOCAL_1 + RADAR_RANGE)
+carro_multado_radar_1 = carro_passou_radar_1 and vel_carro_pass_radar_1
+
+if vel_carro_pass_radar_1:
+    print('Velocidade carro passou do radar 1')
+
+if carro_passou_radar_1:
+    print('Carro passou radar 1')
+
+if carro_multado_radar_1:
+    print('carro multado em radar 1')
+

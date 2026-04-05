@@ -1,0 +1,58 @@
+Para Que Serve?
+O username e email servem para:
+
+✅ Identificar quem fez cada commit
+✅ Aparecer no histórico do GitHub (quem fez as alterações)
+✅ Receber notificações de comentários nos seus commits
+✅ Vincular os commits à sua conta do GitHub
+Como Configurar
+Opção 1: Configuração Global (para todos os projetos)
+Abra o Terminal no VSCode (Ctrl + `) e execute:
+
+PowerShell
+git config --global user.name "Seu Nome"
+git config --global user.email "seu.email@gmail.com"
+Exemplo:
+para saber se já esta configurado o global :
+abra o powershel pelo vscode e digite
+git config --global --list 
+deverá aparecer :
+user.name=Felipe Marinho(o nome que você usou)
+user.email=seu.email@gmail.com(o email que você usou)
+caso não apareça siga ops passos abaixo
+
+
+PowerShell do vscode
+git config --global user.name "Felipe Marinho"
+git config --global user.email "felipemmarinho@gmail.com"
+
+Opção 2: Configuração Local (apenas para este projeto)
+Se quiser usar outro nome/email só neste repositório:
+
+PowerShell
+git config user.name "Seu Nome"
+git config user.email "seu.email@gmail.com"
+(Sem --global)
+
+Verificar as Configurações
+Para verificar o que você configurou:
+
+PowerShell
+git config --global user.name
+git config --global user.email
+Ou ver todas as configurações:
+
+PowerShell
+git config --global --list
+⚠️ Importante
+Use o mesmo email que você registrou no GitHub!
+
+Se seu email no GitHub é felipemmarinho@email.com, use esse mesmo email na configuração.
+
+Resumo:
+PowerShell
+# Configure uma vez
+git config --global user.name "Felipe Marinho"
+git config --global user.email "felipemmarinho@email.com"
+
+# Pronto! Todos os seus commits terão essa informação

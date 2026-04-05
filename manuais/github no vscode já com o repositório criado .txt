@@ -1,0 +1,35 @@
+Passo a Passo
+1. Abra a Pasta no VSCode
+Abra o VSCode
+Clique em File → Open Folder (ou Ctrl + K + Ctrl + O)
+Escolha a pasta do seu projeto
+Clique em Select Folder
+2. Clone o Repositório do GitHub
+Opção A: Pelo VSCode (mais fácil)
+
+Clique em Source Control (ícone na barra lateral esquerda)
+Clique em Clone Repository
+Cole a URL do seu repositório GitHub:
+Code
+https://github.com/felipemmarinho/seu-repo-aqui.git
+Escolha a pasta onde quer clonar
+Clique em Select as Repository Destination
+Opção B: Pelo Terminal
+
+Abra o Terminal (Ctrl + `) e execute:
+
+PowerShell
+git clone https://github.com/felipemmarinho/seu-repo-aqui.git
+3. Pronto! 🎉
+Agora você tem:
+
+✅ O repositório conectado ao GitHub
+✅ Todos os arquivos sincronizados
+✅ Pode fazer commits e push normalmente
+Para Fazer Alterações:
+Edite os arquivos no VSCode
+Abra a aba Source Control (Ctrl + Shift + G)
+Faça Stage dos arquivos (clique no +)
+Escreva uma mensagem de commit
+Clique em ✓ para fazer commit
+Clique em ... → Push para enviar para GitHub

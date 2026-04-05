@@ -1,0 +1,20 @@
+para criar uma conexão no desctop faça :
+
+1 - abra o powershell
+2 - Digite cd o caminho onde será criado a pasta ex:"C:\curso_python\Senac"
+2 - digite - ex : git clone https://github.com/felipemmarinho/{nome da pasta}.git
+        Baixar todos os arquivos do repositório
+        Criar uma pasta chamada {nome da pasta} no seu computador
+        Conectar automaticamente ao repositório remoto no GitHub
+3 - entre na pasta do projeto digitando cd {nome da pasta}
+4 - caso precise desconectar o git da pasta faça ;(Isso remove apenas a pasta .git, mantendo todos os seus arquivos. A pasta deixará de ser um repositório Git.)     
+    A -  digite ex :cd C:\Windows\System32\udemy caminho onde se quer desconectar a pasta do github
+    B -  rmdir /s .git
+
+5 - Deletar a Pasta Inteira (recomendado) - Usando o CMD
+    A - cd C:\Windows\System32 - este é o caminho oinde a pasta se encontra
+    B - rmdir /s udemy
+6 - 5 - Deletar a Pasta Inteira (recomendado) - Usando o usando o powershell
+    A - cd C:\Windows\System32 - este é o caminho oinde a pasta se encontra
+    B - rm -r -Force udemy
+

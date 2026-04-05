@@ -1,0 +1,38 @@
+Passo a Passo
+1. Abra a Pasta no VSCode
+Abra o VSCode
+Clique em File → Open Folder (ou Ctrl + K + Ctrl + O)
+Escolha a pasta onde quer criar o repositório
+Clique em Select Folder
+2. Inicialize o Repositório Git
+Opção A: Usando a Interface do VSCode (mais fácil)
+
+Clique no ícone Source Control na barra lateral esquerda (parece um "Y" ou ramificação)
+Clique em Initialize Repository
+Opção B: Usando o Terminal
+
+Abra o Terminal integrado: Ctrl + ` (ou View → Terminal)
+Execute:
+PowerShell
+git init
+3. Pronto! 🎉
+Agora você tem um repositório Git local. Você verá:
+
+A aba Source Control ativa na barra lateral
+Todos os arquivos da pasta aparecerão como "não rastreados"
+Próximos Passos (Opcional)
+Se quiser conectar com o GitHub:
+Crie um repositório vazio no GitHub (sem README, .gitignore ou license)
+
+Acesse https://github.com/new
+Dê um nome e clique em Create repository
+No VSCode, adicione o repositório remoto:
+
+PowerShell
+git remote add origin https://github.com/felipemmarinho/seu-repo-aqui.git
+git branch -M main
+git push -u origin main
+Para fazer commit e push pelo VSCode:
+Stage dos arquivos: Clique no + ao lado do arquivo na aba Source Control
+Commit: Digite a mensagem na caixa de texto e clique em ✓ (ou Ctrl + Enter)
+Push: Clique em ... → Push

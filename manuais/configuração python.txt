@@ -1,0 +1,23 @@
+- no início na instalação na primeira tela 
+	- "marcar "Add python.exe to path"
+- O resto não modificar
+
+para saber se o python foi instalado usar o powershell e digitar
+
+	python --version <enter> ou
+	py --version
+
+para listar um diretório digitar 
+	ls
+
+melhorar a segurança do python no powershell(como sdministrador) digitar
+
+	Get-ExecutionPolicy (diferenciar maiúscula de minúscula) - é para aparecer restrict
+
+	se não tiver restrict  digitar
+
+	Set - executionPolicy AllSigned - force
+
+
+	
+	

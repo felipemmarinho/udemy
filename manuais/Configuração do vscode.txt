@@ -1,0 +1,33 @@
+
+ir na engrenagem -> setings 
+
+para ativar para o vscode mostrar uma pasta dentro da outra ir na engrenagem -> setings 
+
+	na procura digite "compact folderes e desmarcar a opção
+
+extensões a serem instaladas :
+	* coderunner
+	* OmThemes - é utilizar o " Default drácula itálic "
+	* Material icontheme
+
+após instalar essas instensões vá em :
+
+no canto superior direito o primeiro ícone (open setting(jsion))
+
+irá aparecer algo parecido com isso 
+{
+    "editor.fontSize": 16,
+    "explorer.compactFolders": false,
+    "code-runner.runInTerminal":true,
+    "code-runner.clearPreviousOutput": true,
+    "code-runner.executorMap": {        
+        "python": "cls ;python -u",
+     },
+    "code-runner.ignoreSelection": true,
+    "workbench.colorTheme": "OM Theme (Default Dracula Italic)",
+    "workbench.iconTheme": "material-icon-theme",
+    "python.defaultInterpreterPath": "python",
+    "editor.bracketPairColorization.enabled": true,
+    "files.autoSave": "afterDelay"
+}
+

@@ -1,1 +1,7 @@
-para comentar várias linhas selecionar as linhas que se quer comentar + crtl + tecla de espaço
+1 - para comentar várias linhas selecionar as linhas que se quer comentar + crtl + tecla de espaço
+
+2 - trocar uma variável ou palavra que se encontra em várias linhas do arquivo
+        seleciona a palavra que se quer alterar aperta crtl+shift+l e digita a palavra 
+
+3 - copiar uma linha inteira
+        Alt + Shift +↓
